@@ -50,3 +50,22 @@ div, h1, h2{
   align-items: center;
   font-family: monospace;
 }
+
+.auto {
+  display: flex;
+  background-color: red;
+  width: 200px;
+  height: 250px;
+  margin: 50px auto;
+  border: 3px solid black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+
+}
+
+.auto li {
+  cursor: pointer;
+}

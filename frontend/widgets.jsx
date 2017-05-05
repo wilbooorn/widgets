@@ -5,7 +5,7 @@ import Weather from './weather';
 import AutoComplete from './autocomplete';
 
 
-const Names = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet",
+const names = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet",
                "Cupid", "Donner", "Blitzen"];
 
 class Root extends React.Component {
@@ -15,7 +15,7 @@ class Root extends React.Component {
       <div>
         <Clock />
         <Weather />
-        <AutoComplete names={Names}/>
+        <AutoComplete names={names} />
       </div>
     );
   }
