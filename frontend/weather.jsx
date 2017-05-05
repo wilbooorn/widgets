@@ -17,7 +17,6 @@ class Weather extends React.Component {
 
       request.onload = function() {
         if (request.status >= 200 && request.status < 400) {
-          // Success!
           var resp = request.responseText;
           resp = JSON.parse(resp);
           let kelvin = resp.main.temp;
@@ -28,7 +27,6 @@ class Weather extends React.Component {
           console.log("Error getting the weather");
         }
       };
-
       request.send();
     });
 

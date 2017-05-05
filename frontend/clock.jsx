@@ -28,7 +28,7 @@ class Clock extends React.Component {
       <div className="clock">
         <div className = "time">
           <h1>Time:</h1>
-          <h1>{time.getHours()}:{time.getMinutes()}:{time.getSeconds() } PDT</h1>
+          <h1>{time.getHours()}:{pad(time.getMinutes())}:{pad(time.getSeconds()) } PDT</h1>
         </div>
 
         <div className="date">
@@ -40,6 +40,14 @@ class Clock extends React.Component {
     );
 
   }
+}
+
+function pad(value) {
+    if(value < 10) {
+        return '0' + value;
+    } else {
+        return value;
+    }
 }
 
 export default Clock;
