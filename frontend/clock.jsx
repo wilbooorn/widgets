@@ -22,8 +22,21 @@ class Clock extends React.Component {
 
   render(){
     const { time } = this.state;
+    const days = ["SUN", "MON", "TUES", "WED", "THURS", "FRI", "SAT"];
+    const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
     return (
-      <h1>{time.getHours()}:{time.getMinutes()}:{time.getSeconds()}</h1>
+      <div className="clock">
+        <div className = "time">
+          <h1>Time:</h1>
+          <h1>{time.getHours()}:{time.getMinutes()}:{time.getSeconds() } PDT</h1>
+        </div>
+
+        <div className="date">
+          <h1>Date:</h1>
+          <h1>{days[time.getDate()]}, {months[time.getMonth()]} {time.getDay()}, {time.getFullYear()}</h1>
+        </div>
+
+      </div>
     );
 
   }
