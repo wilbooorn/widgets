@@ -18,15 +18,16 @@ div, h1, h2{
   color: white;
   background-color: blue;
   font-family: fantasy;
-  margin: 0 auto;
+  margin: 50px auto;
   border: 3px solid black;
 }
+
 
 .time{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px;
+  margin: 10px;
 
 }
 
@@ -34,5 +35,18 @@ div, h1, h2{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px;
+  margin: 10px;
+}
+
+.weather{
+  background-color: yellow;
+  width: 500px;
+  height: 150px;
+  margin: 50px auto;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
 }
