@@ -9,9 +9,9 @@ import Tabs from './tabs';
 const names = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet",
                "Cupid", "Donner", "Blitzen"];
 
-const tabs = [ { "one" : "First Tab",
-                  "two": "Second Tab",
-                  "three": "Third Tab" }];
+const tabs = [ { title: "one", content: "First Tab" },
+                { title: "two",  content: "Second Tab" },
+                { title: "three", content: "Third Tab" }];
 
 class Root extends React.Component {
 
