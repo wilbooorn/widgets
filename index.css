@@ -71,6 +71,8 @@ div, h1, h2{
 }
 
 .small{
+  margin: 0 auto;
+  width: 500px;
   display: flex;
   justify-content: center;
   flex-direction: row;
